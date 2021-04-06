@@ -1,0 +1,60 @@
+.how-it {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1620px;
+	height: 940px;
+	margin: 0 auto;
+	font-family: Roboto;
+}
+.how-it .artcl {width: 792px;}
+.how-it .cap-h3 {
+	margin-top: 99px;
+	margin-left: 1px;
+	color: var(--strip-3);
+}
+.how-it .artcl-text {
+	margin-top: 32px;
+	width: 790px;
+	height: 80px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--font-2);
+}
+.how-it .picture-two-deers {/*figure*/
+	width: 790px;
+	height: 323px;
+	margin-top: 30px;
+	margin-right: 3px;
+	overflow: hidden;
+}
+.how-it .ranger {
+	margin-top: 17px;
+	margin-left:-2px;
+}
+.how-it .watch-online-button {
+	margin-top: 19px;
+	margin-left:-2px;
+	color: var(--c-font-3);
+}
+
+.how-it input[type=range]::-webkit-slider-thumb {width:60px;}
+.how-it input[type=range]::-moz-range-thumb {width:60px;}
+
+
+@media (max-width: 1919px) {
+	.how-it {width: 900px;}
+	.how-it .picture-two-deers {
+		width: 746px;
+		margin-top: 13px;
+	}
+	.how-it .artcl-text {
+		width: 746px;
+		height: 96px;
+	}
+	.how-it .artcl {width: 746px;}
+
+}

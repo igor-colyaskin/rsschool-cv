@@ -1,0 +1,250 @@
+.this-page {
+	pointer-events: none;
+}
+.ranger {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 245px;
+	height: 72px;
+}
+.ranger .ranger-indicator {
+	height: 28px;
+	margin-top: 12px;
+	text-align: center;
+	font-family: Roboto;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28.13px;
+}
+.ranger .ranger-indicator .total-position {
+	font-size: 14px;
+	line-height: 16.41px;
+	opacity: .65;
+}
+.ranger .ranger-slider {
+	margin-top: 14px;
+	cursor: pointer;
+
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	outline: none;
+	background: transparent;
+}
+.ranger .ranger-slider::-webkit-slider-runnable-track {
+	width: 245px;
+	height: 5px;
+	background-color: rgba(189, 189, 189, 0.57);
+}
+input[type=range]::-webkit-slider-thumb {
+	background: var(--strip-3);
+	width:30px;
+	height: 10px;
+	-webkit-appearance: none;
+	margin-top: -3px;
+}
+input[type=range]::-moz-range-track {
+	width: 245px;
+	height: 5px;
+	background-color: rgba(189, 189, 189, 0.57);
+}
+input[type=range]::-moz-range-thumb {
+	background:  var(--strip-3);
+	width:30px;
+	height: 10px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: none;
+	margin-top: -3px;
+}
+.big-watch-btn {
+	width: 245px;
+	height: 55px;
+	padding: 3px 0 0 38px;
+	background: url("../assets/green-button-play.svg");
+
+	font-family: Roboto;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FEFEFE;
+}
+.big-watch-btn:focus {outline: none;}
+.watch-online-button {
+	display: block;
+	width: 245px;
+	height: 55px;
+	padding: 18px 0 0 38px;
+	background: url("../assets/green-button-play.svg");
+
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FEFEFE;
+}
+
+h3 {
+	width: 790px;
+	height: 56px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 56px;
+}
+.green-btn {
+	width: 245px;
+	height: 55px;
+	background: linear-gradient(106.89deg, #4BD8B5 -14.32%, #49D6DF 100.68%);
+	border-radius: 3px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+}
+.green-btn:focus {outline: none;}
+.pointer {
+	width: 18px;
+	height: 30px;
+}
+.pointer-left {background: url("../assets/pointer-left.svg");}
+.pointer-right {background: url("../assets/pointer-right.svg");}
+.btn:hover {cursor: pointer;}
+/** Pop up --------------------------------------------------------*/
+.popup-container {
+	position: relative;
+	width: 0;
+	height:0;
+	display: none;
+}
+.popup-frame {
+	position: absolute;
+	top: -300px;
+	right: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	width: 790px;
+	height:630px;
+	background: #a9ecdc;
+}
+.popup-frame .block,
+.popup-frame .block-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+	width: 725px;
+}
+.popup-frame .block {height: 85px;}
+.popup-frame .block-about {
+	height: 61px;
+	padding-top: 21px;
+}
+.popup-frame .popup-h3 {
+	width: 725px;
+	height: 67px;
+	margin-top: 1px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 116.5%;
+	text-transform: uppercase;
+	text-align: center;
+	color: #313131;
+}
+.popup-frame fieldset {
+	width: 335px;
+	height: 65px;
+	border-radius: 5px;
+}
+.popup-frame fieldset legend {
+	width: 62px;
+	height: 16px;
+	margin-left: 24px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 116.5%;
+	color: #828282;
+}
+.popup-frame h4 {
+	width: 335px;
+	height: 61px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 116.5%;
+	color: #828282;
+	text-align: left;
+}
+.popup-frame .btn-donate {
+	width: 245px;
+	height: 55px;
+	margin-top: 10px;
+	background: url("../assets/pop-up-green-button.svg");
+}
+.popup-frame .block-agreement {
+	height: 80px;
+	width: 478px;
+	padding-top: 20px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 116.5%;
+	text-align: center;
+	color: #828282;
+}
+/* Pet card ---------------------------------------------------- */
+.pet-card {
+	position:absolute;
+/*	top: 100%;
+	left: 6%;
+	z-index: 3;
+	transition: top .4s ease-in-out;*/
+	width: 230px;
+	height: 100px;
+}
+.pet-card-text {
+	width: 194px;
+	height: 48px;
+	padding: 5px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: white;
+}
+.pet-card-button-watch {
+	position: absolute;
+	left: 5px;
+	bottom: 10px;
+	width: 115px;
+	height: 25px;
+	background: url("../assets/pets-watch-online-button.svg") no-repeat;
+}
+.pet-card-button-donate {
+	position: absolute;
+	right: 27px;
+	bottom: 10px;
+	width: 75px;
+	height: 25px;
+	background: url("../assets/pets-donate-button.svg") no-repeat;
+}
+/* Pet card end---------------------------------------------------- */
+
+

@@ -1,0 +1,61 @@
+.wrapper-header {
+	height: 94px;
+	background-color: var(--strip-0);
+}
+.wrapper-watch {
+	height: 940px;
+	background: url("../assets/watch.jpg") no-repeat center bottom;
+	background-size: cover;
+}
+.wrapper-how-it {
+	height: 883px;
+	background-color: var(--strip-1);
+}
+.wrapper-what-inspires {
+	height: 413px;
+	background-color: var(--strip-2);
+}
+.wrapper-pets {
+	height: 854px;
+	background-color: var(--strip-1);
+}
+.wrapper-pay {
+	height: 754px;
+	background-color: var(--strip-2);
+}
+.wrapper-testi {
+	height: 810px;
+	background-color: var(--strip-1);
+}
+.wrapper-map {
+	height: 904px;
+	background-color: var(--strip-2);
+}
+.wrapper-map-2 {
+	height: 744px;
+	background-color: var(--strip-2);
+}
+.wrapper-header-map-2 {
+	height: 160px;
+	background-color: var(--strip-2);
+}
+.wrapper-footer {
+	height: 751px;
+	background-color: var(--strip-3);
+}
+.wrapper-main {
+	height: 910px;
+	background-color: var(--strip-1);
+}
+.wrapper-choose-your {
+	height: 520px;
+	background-color: var(--strip-1);
+}
+@media (max-width: 1919px) {
+	.wrapper-watch {height: 926px;}
+	.wrapper-pets {height: 752px;}
+	.wrapper-pay {height: 702px;}
+	.wrapper-map-2 {height: 682px;}
+	.wrapper-footer {height: 737px;}
+
+}

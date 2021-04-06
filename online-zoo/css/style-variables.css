@@ -1,0 +1,19 @@
+.light-theme {
+	--strip-0: white;
+	--strip-1: #fbfbfb;
+	--strip-2: #f2f2f2;
+	--strip-3: #333;
+	--font-2: #4F4F4F;
+	--font-3: #fefefe;
+
+	--switch-theme: url("../assets/switch-theme-light.svg");
+}
+
+.constant {
+	--c-strip-0: white;
+	--c-strip-1: #fbfbfb;
+	--c-strip-2: #f2f2f2;
+	--c-strip-3: #333;
+	--c-font-2: #4F4F4F;
+	--c-font-3: #fefefe;
+}

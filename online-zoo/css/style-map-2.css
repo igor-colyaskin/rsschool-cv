@@ -1,0 +1,182 @@
+.map-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1800px;
+	height: 744px;
+	margin: 0 auto;
+	font-family: Roboto;
+}
+.map-2 .map-2-div {
+	position: relative;
+	width: 1200px;
+	height: 498px;
+	margin-top: 56px;
+}
+.map-2 .map-2-div svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#svg-map {display: block;}
+#svg-map-1200 {display: none;}
+/*  Animals on map */
+.map-2 .animal-on-map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 67px;
+	height: 94px;
+}
+.map-2 .animal-on-map.eagle {
+	top: 17%;
+	left: 11%;
+}
+.map-2 .eagle .animal-card {
+	top: 94px;
+	left: 0;
+}
+.map-2 .animal-on-map.panda {
+	top: 25%;
+	left: 76%;
+}
+.map-2 .panda .animal-card {
+	top: 94px;
+	right: 25px;
+}
+.map-2 .animal-on-map.croco {
+	top: 23%;
+	left: 20.5%;
+}
+.map-2 .croco .animal-card {
+	top: 94px;
+	left: 25px;
+}
+.map-2 .animal-on-map.gorilla {
+	top: 37%;
+	left: 48%;
+}
+.map-2 .gorilla .animal-card {
+	top: 94px;
+	left: 25px;
+}
+/* end Animal card */
+.map-2 .animal-card {
+	position: absolute;
+	z-index: 6;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: start;
+
+	width: 436px;
+	height: 149px;
+	background: var(--c-font-3);
+	box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+	border-radius: 8px;
+
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+.map-2 .animal-card img {
+	margin-top: 38px;
+	margin-left: 46px;
+	width: 65px;
+	height: 65px;
+}
+.map-2 .cap-h5 {
+	position: absolute;
+	width: 166px;
+	height: 21px;
+	left: 131px;
+	top: 40px;
+
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 21px;
+	color: var(--strip-3);
+}
+.map-2 .animal-description {
+	margin-top: 38px;
+	margin-left: 46px;
+	
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+.map-2 .animal-description-text {
+	position: absolute;
+	width: 260px;
+	height: 16px;
+	left: 131px;
+	top: 64px;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: .1px;
+	color: var(--font-2);
+}
+/* end Animal card */
+.map-2 .pin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 67px;
+	height: 94px;
+}
+.map-2 .pin-plug:hover ~ .pin-green {opacity: 0;}
+.map-2 .pin-plug:hover ~ .animal-card {opacity: 1;}
+.map-2 .pin-red {
+	background: url("../assets/pin-red.svg");
+	z-index: 2;
+}
+.map-2 .pin-green {
+	background: url("../assets/pin-green.svg");
+	opacity: 1;
+	transition: opacity 0.3s;
+	z-index: 3;
+}
+.map-2 .round-animal {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	width: 43px;
+	height: 43px;
+	z-index: 4;
+}
+.map-2 .round-animal img{
+	width: 43px;
+	height: 43px;
+}
+.map-2 .pin-plug {
+	opacity: 0;
+	z-index: 6;
+}
+/*.map-2 .big-watch-btn {margin-top: 35px;}*/
+.map-2 .watch-online-button {
+	color: #FEFEFE;
+
+	margin-top: 35px;
+}
+
+
+@media (max-width: 1919px) {
+	.map-2 {width: 682px;}
+	.map-2 .map-2-div {
+		width: 900px;
+		height: 436px;
+		margin-top: 56px;
+	}
+	.map-2 .map-2-div svg {
+		width: 900px;
+		height: 436px;
+		object-fit: fill;
+	}
+	#svg-map {display: none;}
+	#svg-map-1200 {display: block;}
+
+}

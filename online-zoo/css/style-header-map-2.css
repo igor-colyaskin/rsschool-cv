@@ -1,0 +1,20 @@
+.header-map-2 {
+	width: 1200px;
+	height: 160px;
+	margin: 0 auto;
+	width: 1200px;
+	padding-top: 100px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	color: var(--strip-3);
+}
+
+@media (max-width: 1919px) {
+	.header-map-2 {
+		width: 900px;
+	}
+}
