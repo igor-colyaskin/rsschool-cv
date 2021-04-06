@@ -1,0 +1,67 @@
+.pay {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1200px;
+	height: 754px;
+	margin: 0 auto;
+	font-family: Roboto;
+}
+.pay .cap-h3 {
+	margin-top: 99px;
+	text-align: center;
+	margin-left: -2px;
+}
+.pay .pay-text {
+	margin-top: 32px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: var(--font-2);
+}
+.pay .payment-order {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	height: 245px;
+	margin-top: 91px;
+	margin-left: -7px;
+}
+.pay .pay-step {
+	width: 245px;
+	height: 245px;
+}
+.pay .pay-one {background: url("../assets/pay-one.svg");}
+.pay .pay-two {background: url("../assets/pay-two.svg");}
+.pay .pay-three {background: url("../assets/pay-three.svg");}
+.pay .long-arrow {
+	width: 108px;
+	height: 15px;
+	background: url("../assets/long-arrow.svg");
+}
+.pay .green-btn {
+	margin-top: 60px;
+	margin-left: -6px;
+}
+
+@media (max-width: 1919px) {
+	.pay {height: 702px;}
+	.pay .payment-order {
+		width: 900px;
+		margin-top: 49px;
+		margin-left: 0px;
+	}
+	.pay .long-arrow {
+		width: 48px;
+		background: url("../assets/short-arrow.svg");
+	}
+	.pay .green-btn {
+	margin-top: 50px;
+	margin-left: -2px;
+	}
+}

@@ -1,0 +1,55 @@
+.what-inspires {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	height: 413px;
+	margin: 0 auto;
+	font-family: Roboto;
+}
+.what-inspires .art {
+	width: 380px;
+	height: 216px;
+	margin-right: 2px;
+	text-align: center;
+}
+.what-inspires .cap-h4 {
+	margin-top: 15px;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	text-align: center;
+	color: var(--strip-3);
+}
+.what-inspires .art-text {
+	margin-top: 14px;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: var(--font-2);
+}
+.what-inspires img {
+	display: block;
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+@media (max-width: 1919px) {
+	.what-inspires {
+		width: 900px;
+	}
+	.what-inspires .art {
+		width: 286px;
+		line-height: 16.4px;
+	}
+	.what-inspires .cap-h4 {
+		margin-top: 19px;
+	}
+	.what-inspires .art-text {
+		margin-top: 20px;
+	}
+
+}

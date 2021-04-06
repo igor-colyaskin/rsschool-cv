@@ -1,0 +1,95 @@
+.choose-your {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1900px;
+	height: 520px;
+	margin: 0 auto;
+	font-family: Roboto;
+	box-shadow: inset 0px 4px 8px rgba(44, 101, 77, 0.08);
+}
+
+.choose-your h1 {
+	width: 1px;
+	height: 1px;
+	font-size: 1px;
+	color:  var(--strip-3);
+	background-color: var(--strip-3);
+	overflow: hidden;
+}
+.choose-your h2 {
+	width: 790px;
+	height: 60px;
+	margin-top: 58px;
+
+	font-style: normal;
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 56px;
+	text-align: center;
+	color: var(--strip-3);
+}
+
+.choose-your .choose-your-text {
+	width: 790px;
+	height: 80px;
+	margin-top: 18px;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: var(--font-2);
+}
+
+.choose-your .choose-your-slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 53px;
+}
+
+.choose-your .animal-picture,
+.choose-your .animal-picture img {
+	width: 108px;
+	height: 108px;
+}
+.choose-your .animal-picture-selected:hover,
+.choose-your .animal-picture:hover {
+	cursor: pointer;
+}
+
+.choose-your .animal-picture {
+	margin: 0 15px;
+}
+
+.choose-your .animal-picture-selected {
+	width: 157px;
+	height: 157px;
+	background-image: url("../assets/movie-pictures/ring.png");
+	margin: 0 -10px;
+	padding: 9px;
+}
+.choose-your .animal-picture-selected img {
+	width: 139px;
+	height: 139px;
+}
+.choose-your .pointer-left,
+.choose-your .pointer-right {
+	width: 30px;
+	height: 30px;
+}
+.choose-your .pointer-left {
+	background: url("../assets/pointer-left.svg") no-repeat;
+	margin: 0 12px 0 10px;
+}
+.choose-your .pointer-right {
+	background: url("../assets/pointer-right.svg") no-repeat;
+	margin-left: 24px;
+}
+.choose-your .ranger {
+	margin-top: 20px;
+	margin-left: -36px;
+}

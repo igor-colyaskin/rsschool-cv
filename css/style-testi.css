@@ -1,0 +1,65 @@
+.testi {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1290px;
+	height: 810px;
+	margin: 0 auto;
+	font-family: Roboto;
+}
+.testi .cap-h3 {
+	margin-top: 99px;
+	text-align: center;
+}
+.testi .slider-testi{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 1290px;
+	height: 380px;
+	margin-top: 27px;
+}
+.testi .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 585px;
+	height: 310px;
+	background: #FEFEFE;
+	box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
+	border-radius: 5px;
+}
+.testi .ranger {margin-top: 2px;}
+.testi .pointer-left {margin-right: -2px;}
+.testi .pointer-right {margin-left: -3px;}
+.testi .green-btn {margin-top: 21px;}
+.testi .card .testi-text {
+	width: 440px;
+	margin-top: 17px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: var(--font-2);
+}
+.testi .card img {margin-top: 47px;}
+.testi .card .cap-h5 {
+	margin-top: 16px;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	text-align: center;
+	color: var(--strip-3);
+}
+
+@media (max-width: 1919px) {
+	.testi .slider-testi{width: 990px;}
+	.testi .card {width: 440px;}
+	.testi .pointer-left {margin-right: 6px;}
+	.testi .pointer-right {margin-left: 5px;}
+	.testi .card .testi-text {width: 326px;}
+	.testi .green-btn {margin-top: 19px;}
+
+}

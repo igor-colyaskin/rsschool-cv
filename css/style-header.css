@@ -1,0 +1,55 @@
+header {
+	position: relative;
+	width: 1620px;
+	height: 94px;
+	margin: 0 auto;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: var(--strip-3);
+}
+header .logo {
+	position: absolute;
+	top: 26px;
+	left: 0;
+	width: 59px;
+	height: 42px;
+	background: url("../assets/logo-light.svg");
+}
+header .logo a {
+	display: block;
+	width: 59px;
+	height: 42px;
+}
+header nav {
+	position: absolute;
+	top: 41px;
+	left: 525px;
+	display: flex;
+	justify-content: space-between;
+	width: 570px;
+	height: 42px;
+}
+header .this-page {
+	font-weight: 900;
+	text-decoration: underline;
+}
+header .switch-theme {
+	position: absolute;
+	top: 32px;
+	right: 0px;
+	width: 54px;
+	height: 30px;
+	background: var(--switch-theme);
+	background-size: cover;
+}
+
+@media (max-width: 1919px) {
+	header {
+		width: 900px;
+	}
+	header nav {
+		left: 165px;
+	}
+}

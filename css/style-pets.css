@@ -1,0 +1,116 @@
+.pets {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1290px;
+	height: 854px;
+	margin: 0 auto;
+	font-family: Roboto;
+}
+.pets .cap-h3 {
+	margin-top: 100px;
+	text-align: center;
+}
+.pets .slider-pets {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 1290px;
+	height: 399px;
+	margin-top: 35px;
+}
+.pets .ranger {margin-top: 17px;}
+.pets .green-btn {margin-top: 19px;}
+
+.pets .pets-picture {/*figure*/
+	position: relative;
+	width: 278px;
+	height: 399px;
+	margin: 0 15px;
+	z-index: 1;
+	overflow: hidden;
+}
+.pets .pets-picture img {
+	width: 278px;
+	height: 399px;
+	border-radius: 5px;
+}
+.pets .pet-card {
+	position:absolute;
+	top: 100%;
+	left: 6%;
+	z-index: 3;
+	transition: top .4s ease-in-out;
+}
+.pets .shadowing {
+	position: absolute;
+	width: 278px;
+	height: 399px;
+	background: linear-gradient(0deg, rgba(8,8,8,0.65) 31%, rgba(8,8,8,0.56) 41%, rgba(68,67,69,0.53) 64%, rgba(236,232,249,0.12) 100%);
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+	z-index: 2;
+}
+.pets .covering {
+	position: absolute;
+	width: 278px;
+	height: 399px;
+	background: transparent;
+	z-index: 4;
+}
+.pets .covering:hover ~ .pet-card {
+	position:absolute;
+	top: 66.5%;
+}
+.pets .covering:hover ~ .shadowing {opacity: 1;}
+.pets .covering a {
+	display: block;
+	width: 278px;
+	height: 399px;
+}
+
+.pets .pointer-left {margin-right: 10px;}
+.pets .pointer-right {
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+@media (max-width: 1919px) {
+	.pets .slider-pets {
+		height: 301px;
+	}
+	.pets,
+	.pets .slider-pets {
+		width: 990px;
+	}
+	.pets {
+		height: 752px;
+	}
+	
+	.pets .covering a,
+	.pets .shadowing,
+	.pets .covering,
+	.pets .pets-picture img,
+	.pets .pets-picture {/*figure*/
+		width: 210px;
+		height: 301px;
+	}
+	.pets .pets-picture {/*figure*/margin: 0 10px;}
+	.pets .slider-pets {margin-top: 32px;}
+	.pets .covering:hover ~ .pet-card {
+		position:absolute;
+		top: 59%;
+	}
+	.pets .pet-card {
+		position:absolute;
+		left: 1%;
+	}
+	.pets .pointer-left {margin-right: 16px;}
+	.pets .pointer-right {
+		margin-left: 15px;
+		margin-right: 2px;
+	}
+}

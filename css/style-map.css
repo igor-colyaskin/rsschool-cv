@@ -1,0 +1,294 @@
+.map {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 1800px;
+	height: 904px;
+	margin: 0 auto;
+}
+
+.map .cap-h3 {
+	margin-top: 99px;
+	text-align: center;
+}
+
+.map .map-div {
+	position: relative;
+	margin-top: 61px;
+	width: 1200px;
+	height: 498px;
+	background: url("../assets/map.svg");
+}
+/* Animals common */
+
+.map .animal {
+	position: absolute;
+}
+
+.map .little-circle {
+	position: absolute;
+	top: 43px;
+	left: 132px;
+	z-index: 5;
+
+	width: 43px;
+	height: 43px;
+}
+
+.map .animal .blanc-for-hover,
+.map .animal .blanc-for-us {
+	position: absolute;
+	width: 67px;
+	height: 94px;
+	z-index: 6;
+}
+
+.map .pin {
+	position: absolute;
+	width: 67px;
+	height: 94px;
+}
+
+.map .pin-green {
+	background: url("../assets/pin-green.svg");
+	opacity: 1;
+	transition: opacity 0.2s start;
+	z-index: 4;
+}
+
+.map .pin-red {
+	background: url("../assets/pin-red.svg");
+	opacity: 0;
+	transition: opacity 0.2s end;
+	z-index: 3;
+}
+
+.map .country {position: absolute;}
+
+.map .animal-card {
+	position: absolute;
+	z-index: 4;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: start;
+
+	width: 436px;
+	height: 149px;
+	background: #FEFEFE;
+	box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
+	border-radius: 8px;
+
+	opacity: 0;
+	transition: opacity .3s ease;
+
+}
+
+.map .animal-card img {
+	margin-top: 38px;
+	margin-left: 46px;
+	width: 65px;
+	height: 65px;
+}
+
+.map .cap-h5 {
+	position: absolute;
+	width: 166px;
+	height: 21px;
+	left: 131px;
+	top: 40px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 21px;
+	color: var(--strip-3);
+}
+
+.map .animal-description {
+	margin-top: 38px;
+	margin-left: 46px;
+	
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.map .animal-description-text {
+	position: absolute;
+	width: 260px;
+	height: 16px;
+	left: 131px;
+	top: 64px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: .1px;
+	color: var(--font-2);
+}
+
+.map .blanc-for-hover:hover ~ .pin-green {opacity: 0;}
+.map .blanc-for-hover:hover ~ .pin-red {opacity: 1;}
+
+.map .blanc-for-hover:hover ~ .normal-state.country {opacity: 0;}
+.map .blanc-for-hover:hover ~ .hover-state.country {opacity: 1;}
+
+.map .blanc-for-hover:hover ~ .animal-card {opacity: 1;}
+
+/* Animal 1 */
+
+.map .animal-1 {
+	top: 43px;
+	left: -1px;
+	width: 300px;
+	height: 300px;
+}
+
+.map .animal-1 .pin.for-eagle,
+.map .animal-1 .blanc-for-us.for-eagle {
+	top: 31px;
+	left: 121px;
+}
+
+.map .blanc-for-us.for-eagle:hover ~ .pin-green.for-eagle {opacity: 0;}
+.map .blanc-for-us.for-eagle:hover ~ .pin-red.for-eagle {opacity: 1;}
+
+.map .blanc-for-us.for-croco:hover ~ .pin-green.for-croco {opacity: 0;}
+.map .blanc-for-us.for-croco:hover ~ .pin-red.for-croco {opacity: 1;}
+
+
+.map .blanc-for-us:hover ~ .normal-state.country {opacity: 0;}
+.map .blanc-for-us:hover ~ .hover-state.country {opacity: 1;}
+
+.map .blanc-for-us.for-eagle:hover ~ .animal-card.eagle-card {opacity: 1;}
+.map .blanc-for-us.for-croco:hover ~ .animal-card.croco-card {opacity: 1;}
+
+.map .animal-1 .pin.for-croco,
+.map .animal-1 .blanc-for-us.for-croco {
+	top: 59px;
+	left: 246px;
+}
+
+.map .little-circle.for-croco {
+	top: 72px;
+	left: 257px;
+}
+
+.map .usa {
+	top: 0;
+	left: 1px;
+	width: 338px;
+	height: 188px;
+}
+
+.map .normal-state.usa {
+	background: url("../assets/usa-normal.svg");
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.map .hover-state.usa {
+	background: url("../assets/usa-hover.svg");
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.map .animal-card.eagle-card {
+	top: 109px;
+	left: -283px;
+}
+
+.map .animal-card.croco-card {
+	top: 150px;
+	left: -83px;
+}
+
+/* Animal 2 */
+
+.map .animal-2 {
+	top: 159px;
+	left: 450px;
+	width: 300px;
+	height: 300px;
+}
+
+.map .animal-2 .pin,
+.map .animal-2 .blanc-for-hover {
+	top: 31px;
+	left: 121px;
+}
+
+.map .kamerun {
+	top: 91px;
+	left: 140px;
+	width: 32px;
+	height: 46px;
+}
+
+.map .normal-state.kamerun {
+	background: url("../assets/kamerun-normal.svg");
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.map .hover-state.kamerun {
+	background: url("../assets/kamerun-hover.svg");
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.map .animal-card.gorilla-card {
+	top: 109px;
+	left: -283px;
+}
+
+/* Animal 3 */
+
+.map .animal-3 {
+	top: 59px;
+	left: 771px;
+	width: 300px;
+	height: 300px;
+}
+
+.map .animal-3 .pin,
+.map .animal-3 .blanc-for-hover {
+	top: 31px;
+	left: 121px;
+}
+
+.map .china {
+	top: 48px;
+	left: 39px;
+	width: 194px;
+	height: 126px;
+}
+
+.map .normal-state.china {
+	background: url("../assets/china-normal.svg");
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.map .hover-state.china {
+	background: url("../assets/china-hover.svg");
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.map .animal-card.panda-card {
+	top: 132px;
+	left: -123px;
+}
+
+.map .big-watch-btn {
+	margin: 35px;
+}
+
+
+
